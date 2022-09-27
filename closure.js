@@ -19,3 +19,5 @@ const rememberThis = outer() // But if we do this, since variables are alive in 
 */
 
 console.log(rememberThis()) // This will work and can return rememberMe now through inner() since rememberMe falls into inner function's lexical scope
+
+// IMPORTANT: Inner functions will expand its scope until it finds the variable that it seeks in an outward fashion
